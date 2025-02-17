@@ -1,5 +1,18 @@
-package dsa.linkedlist;
+/*
+Explanation
+Functionality:The function isSublist() checks if a linked list (subList) exists as a continuous sequence in another linked list (mainList).
+It iterates through mainList and tries to match subList node by node.
+If all nodes of subList are found sequentially, it returns true.
+Otherwise, it continues scanning mainList.
 
+Edge Cases: If subList is empty → Always returns true.
+If mainList is empty but subList is not → Returns false.
+Handles cases where sublist is found at beginning, middle, or end.
+Time Complexity:
+
+Worst-case: O(N * M) where N is the length of mainList and M is the length of subList.
+
+*/
 class Node {
     int data;
     Node next;
